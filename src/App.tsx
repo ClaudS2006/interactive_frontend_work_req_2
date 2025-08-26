@@ -1,15 +1,12 @@
 import RandomFunFactsHelper from "./components/RandomFunFactsHelper";
-import './App.css'
+import "./App.css";
 
 function App() {
-
   return (
     <>
-      <div>
-        <RandomFunFactsHelper />
-      </div>
+      <RandomFunFactsHelper />
     </>
   );
 }
 
-export default App
+export default App;
