@@ -54,6 +54,11 @@ export default function RandomFunFactsHelper() {
       <p className={`fact-text ${isFlashing ? "fact-flash" : ""}`}>
         {currentFact}
       </p>
+      <img
+        src="./images/aha.webp"
+        alt="Person having a aha moment"
+        className={`thinking-image ${isFlashing ? "image-flash" : ""}`}
+      />
       <button onClick={() => setIsAutoPlay(!isAutoPlay)}>
         {isAutoPlay ? "Stop Auto-Play" : "Start Auto-Play"}
       </button>

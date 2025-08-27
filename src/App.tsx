@@ -4,7 +4,9 @@ import "./App.css";
 function App() {
   return (
     <>
-      <RandomFunFactsHelper />
+      <div>
+        <RandomFunFactsHelper />
+      </div>
     </>
   );
 }
