@@ -50,7 +50,7 @@ export default function RandomFunFactsHelper() {
 
   return (
     <div>
-      <h1>Fun Facts</h1>
+      <h1 className="header">Fun Facts</h1>
       <p className={`fact-text ${isFlashing ? "fact-flash" : ""}`}>
         {currentFact}
       </p>

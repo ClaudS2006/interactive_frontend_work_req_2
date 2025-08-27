@@ -4,38 +4,28 @@
   padding: 2rem;
   text-align: center;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.header{
+  color: rgb(115, 3, 129);
 }
 .fact-text {
-  transition: background-color 0.3s ease;
+  font-size: larger;
+  padding: 12px;
+  border-radius: 8px;
+  transition: background-color 2s ease;
 }
 
 .fact-flash {
   background-color: #646cff;
+  filter: drop-shadow(0 0 20px rgba(100, 108, 255, 0.8));
 }
 .thinking-image {
   display: block;
   width: 200px;  
-  height: auto; 
-  border-radius: 25%; 
+  height: auto;  
   margin: 20px auto; 
+  border-radius: 12px;
+  border: 2px solid rgb(69, 2, 78);
   opacity: 0.7;
-  transition: transform 0.5s ease;
-  transform-origin: center;
-}
-.image-flash {
-  transform: scale(1.1); /* slightly bigger during flash */
 }
 @keyframes logo-spin {
   from {
@@ -44,18 +34,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
