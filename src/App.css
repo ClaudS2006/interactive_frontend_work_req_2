@@ -4,7 +4,7 @@
   padding: 2rem;
   text-align: center;
 }
-.header{
+.header {
   color: rgb(115, 3, 129);
 }
 .fact-text {
@@ -13,25 +13,16 @@
   border-radius: 8px;
   transition: background-color 2s ease;
 }
-
 .fact-flash {
   background-color: #646cff;
   filter: drop-shadow(0 0 20px rgba(100, 108, 255, 0.8));
 }
 .thinking-image {
   display: block;
-  width: 200px;  
-  height: auto;  
-  margin: 20px auto; 
+  width: 200px;
+  height: auto;
+  margin: 20px auto;
   border-radius: 12px;
   border: 2px solid rgb(69, 2, 78);
   opacity: 0.7;
-}
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
