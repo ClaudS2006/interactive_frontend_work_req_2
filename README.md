@@ -44,6 +44,14 @@ npm run dev
 
 4. Open your browser and navigate to `http://localhost:5173`
 
+## How It Works
+### Random Fact Selection
+The app loads all fun facts from a JSON file (`public/json/funfacts.json`) into the component state using React's `useEffect` hook. When a new fact is needed, the system generates a random index using `Math.floor(Math.random() * allFacts.length)` to select a fact from the array.
+### Timing Implementation
+Auto-play functionality uses `setInterval()` within a `useEffect` hook to automatically change facts every 2000 milliseconds (2 seconds). The effect includes proper cleanup with `clearInterval()` to prevent memory leaks when the component unmounts or when auto-play is toggled off.
+### Visual Effects
+When facts change, both the text and image trigger visual effects using CSS transitions and filters. The flash effect is coordinated through React state (`isFlashing`) and automatically resets after 300ms using `setTimeout()`.
+
 ## Project Structure
 
 ```
