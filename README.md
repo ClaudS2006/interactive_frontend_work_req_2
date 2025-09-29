@@ -8,7 +8,6 @@ A React-based web application that displays random fun facts with smooth visual 
 - ⏯️ **Auto-Play Mode** - Automatically cycles through facts every 2 seconds
 - ✨ **Visual Effects** - Smooth glow animation when facts change
 - 🎨 **Clean UI** - Minimalist design with responsive layout
-- 🖼️ **Visual Elements** - Themed imagery to enhance the experience
 
 ## Technologies Used
 
@@ -50,7 +49,7 @@ The app loads all fun facts from a JSON file (`public/json/funfacts.json`) into 
 ### Timing Implementation
 Auto-play functionality uses `setInterval()` within a `useEffect` hook to automatically change facts every 2000 milliseconds (2 seconds). The effect includes proper cleanup with `clearInterval()` to prevent memory leaks when the component unmounts or when auto-play is toggled off.
 ### Visual Effects
-When facts change, both the text and image trigger visual effects using CSS transitions and filters. The flash effect is coordinated through React state (`isFlashing`) and automatically resets after 300ms using `setTimeout()`.
+When facts change, the text triggers visual effects using CSS transitions and filters. The flash effect is coordinated through React state (`isFlashing`) and automatically resets after 1000ms using `setTimeout()`.
 
 ## Project Structure
 
@@ -70,25 +69,6 @@ public/
 └── images/
     └── aha.webp
 ```
-
-## Learning Objectives Achieved
-
-This project demonstrates:
-
-- **React Hooks**: useState, useEffect for state management and side effects
-- **TypeScript Integration**: Interface definitions and type safety
-- **Component Lifecycle**: Effect cleanup and dependency management  
-- **CSS Animations**: Smooth transitions and filter effect
-- **Data Fetching**: JSON data loading
-- **Event Handling**: User interactions and state updates
-
-## Future Enhancements
-
-- [ ] Manual next/previous buttons
-- [ ] Fact categories and filtering
-- [ ] Speed controls for auto-play
-- [ ] Favorite facts feature
-- [ ] Share functionality
 
 ## License
 
